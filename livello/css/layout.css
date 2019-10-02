@@ -295,6 +295,11 @@ li.footer-menu-items a {
         /* float: left; */
         width: 41%;
     }
+    
+    .design-wrapper {
+        width: 80.1562%;
+        margin: 0px auto;
+    }
 
     .community {
         width: 100%;
