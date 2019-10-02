@@ -58,3 +58,8 @@
 .dot:hover {
   background-color: #757575;
 }
+
+.active-dot {
+  height: 14px;
+  width: 14px;
+}
