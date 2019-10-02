@@ -1,56 +1,60 @@
 .carousel-wrapper {
-    height: 300px;
-    width: 400px;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    border: 1px solid black;
+  height: 500px;
+  width: 800px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid black;
 }
 
 .slider-image {
-    display: none;
-    width: 100%;
-    height: 100%;
+  display: none;
+  width: 100%;
+  height: 100%;
 }
 
 .previous-btn {
-    position: absolute;
-    top: 46%;
-    padding: 5px;
-    cursor: pointer;
+  position: absolute;
+  top: 46%;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .next-btn {
-    position: absolute;
-    top: 46%;
-    right: 5px;
-    padding: 5px;
-    cursor: pointer;
+  position: absolute;
+  top: 46%;
+  right: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .previous-btn:hover,
 .next-btn:hover {
-    color: #ffffff;
-    background-color: #4b4949;
-    border-radius: 4px;
+  color: #ffffff;
+  background-color: #0ed693;
+  border-radius: 4px;
 }
 
 .dot-wrapper {
-    text-align: center;
-    margin-top: 10px;
+  text-align: center;
+  margin: 10px auto;
+  max-width: 300px;
+  background-color: #0ed693;
 }
 
 .dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 2px;
-    background-color: #f1e3e3;
-    border-radius: 50%;
-    display: inline-block;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 4px;
+  background-color: #f1e3e3;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .active-dot,
 .dot:hover {
-    background-color: #757575;
+  background-color: #757575;
 }
