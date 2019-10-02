@@ -103,7 +103,7 @@ main {
 }
 
 .img-container {
-  width: 100%;
+  width: 400px;
   margin-right: 10px;
   float: left;
   display: none;
@@ -324,12 +324,16 @@ li.footer-menu-items a {
   .image-wrapper {
     padding-bottom: 90px;
   }
+  .img-container-main {
+    height: 400px;
+    overflow: hidden;
+  }
 
   .img-container {
-    width: 32%;
+    width: 300px;
     margin-right: 10px;
-    float: left;
-    display: block;
+    /* float: left; */
+    display: inline-block;
     overflow: hidden;
   }
 
