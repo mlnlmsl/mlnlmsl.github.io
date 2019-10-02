@@ -2,7 +2,7 @@
   background-image: url("../images/top-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: fixed; */
+  background-attachment: fixed;
   width: 100%;
   /* height: 746px; */
 }
@@ -128,6 +128,7 @@ main {
   background-image: url("../images/email-bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-attachment: fixed;
   width: 100%;
   height: 790px;
 }
