@@ -1,0 +1,240 @@
+body {
+    font-family: 'Quicksand Light', Helvetica, sans-serif;
+    /* background-image: url("C:/Users/User/Desktop/Milan_Lamsal.jpg"); */
+    /* background-repeat: no-repeat;
+    height: 3595px; */
+}
+
+ul.nav-menu {
+    list-style-type: none;
+    width: 77.4853%;
+    text-align: center;
+    margin: 0px auto;
+    display: none;
+
+}
+
+ul.nav-menu li.menu-item {
+    display: inline-block;
+    margin: 20px 22px;
+}
+
+ul.nav-menu li.menu-item img {
+    line-height: 30px;
+}
+
+ul.nav-menu li.menu-item a {
+    text-decoration: none;
+    line-height: 30px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+
+ul.nav-menu li.menu-item a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+.header-info h1 {
+    font-size: 1.5em;
+}
+
+.header-info p.text {
+    line-height: 20px;
+    font-size: 0.9em;
+}
+
+p.top-btn {
+    line-height: 30px;
+    background-color: #16a085;
+    color: white;
+    display: inline-block;
+    width: 100px;
+    margin: 20px 0px;
+    border-radius: 4px;
+}
+
+ul.header-bottom-icons {
+    list-style-type: none;
+    text-align: center;
+}
+
+li.header-icon {
+    display: inline-block;
+    width: 10px;
+}
+
+li.header-icon img {
+    height: 10px;
+    width: 10px;
+}
+
+/* first div of body  */
+.get-started-header {
+    font-size: 19px;
+    letter-spacing: 4px;
+    color: #16a085;
+    padding-top: 20px;
+}
+
+.get-started-content p.main-content {
+    margin-top: 40px;
+    font-size: 11px;
+    color: #6a6a6a;
+    line-height: 25px;
+}
+
+p.get-started-btn {
+    line-height: 50px;
+    background-color: #16a085;
+    color: white;
+    display: inline-block;
+    width: 195px;
+    margin: 40px 0px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* second main content   */
+
+.design-header {
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: #16a085;
+}
+
+.design-text {
+    margin-top: 20px;
+    height: 200px;
+    font-size: 12px;
+    color: #6a6a6a;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.design-btn {
+    line-height: 50px;
+    background-color: #16a085;
+    color: white;
+    display: inline-block;
+    width: 185px;
+    margin: 20px 5px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* ipad view  */
+@media only screen and (min-width:720px) {
+    .burger {
+        display: none;
+    }
+
+    ul.nav-menu {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    ul.nav-menu li.menu-item a {
+        text-decoration: none;
+        line-height: 30px;
+        padding: 0px;
+        color: #ffffff;
+    }
+
+    .header-info h1 {
+        font-size: 2.5em;
+    }
+
+    .header-info p.text {
+        line-height: 30px;
+        font-size: 1em;
+    }
+
+    p.top-btn {
+        line-height: 50px;
+        background-color: #16a085;
+        color: white;
+        display: inline-block;
+        width: 170px;
+        margin: 20px 0px;
+    }
+
+    li.header-icon {
+        display: inline-block;
+        width: 20px;
+        margin-left: 5px;
+    }
+
+    li.header-icon img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .design-header {
+        font-size: 19px;
+        letter-spacing: 4px;
+        color: #16a085;
+    }
+
+    .design-text {
+        margin-top: 40px;
+        font-size: 12px;
+        color: #6a6a6a;
+        line-height: 25px;
+        height: auto;
+        overflow: auto;
+    }
+
+    .design-btn {
+        line-height: 50px;
+        background-color: #16a085;
+        color: white;
+        display: inline-block;
+        width: 195px;
+        margin: 50px 0px;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+}
+
+
+/* desktop view  */
+@media only screen and (min-width:901px) {
+    ul.nav-menu li.menu-item a {
+        padding: 20px;
+    }
+
+    .get-started-header {
+        font-size: 19px;
+        letter-spacing: 4px;
+        color: #16a085;
+    }
+
+    .get-started-content p.main-content {
+        margin-top: 40px;
+        font-size: 11px;
+        color: #6a6a6a;
+        line-height: 25px;
+    }
+
+    p.get-started-btn {
+        line-height: 50px;
+        background-color: #16a085;
+        color: white;
+        display: inline-block;
+        width: 195px;
+        margin: 40px 0px;
+        border-radius: 4px;
+        text-align: center;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
