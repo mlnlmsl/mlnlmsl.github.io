@@ -59,7 +59,8 @@ function addEventListnersToDot() {
  * @return none
  */
 function nextImage(offset) {
-    showActiveImage(IMAGE_INDEX += offset);
+    IMAGE_INDEX += offset;
+    showActiveImage(IMAGE_INDEX);
 }
 
 
@@ -70,7 +71,8 @@ function nextImage(offset) {
  * @return none
  */
 function changeImage(selectedPosition) {
-    showActiveImage(IMAGE_INDEX = selectedPosition);
+    IMAGE_INDEX = selectedPosition;
+    showActiveImage(IMAGE_INDEX);
 }
 
 
