@@ -1,5 +1,5 @@
 var IMAGE_INDEX = 0;
-
+var WIDTH = 800;
 
 /**
  * Methos to find total number of carousel images
@@ -8,9 +8,9 @@ var IMAGE_INDEX = 0;
  * @returns totalImages{number}
  */
 function getTotalImages() {
-    let totalImages = document.querySelectorAll(".slider-image").length;
+    let images = document.querySelectorAll(".slider-image");
 
-    return totalImages;
+    return images.length;
 }
 
 
@@ -89,7 +89,7 @@ function showActiveImage(currentIndex) {
     //reset all the element i.e images and dots
     for (let i = 0; i < images.length; i++) {
         images[i].style.display = "none";
-        dots[i].className = dots[i].className.replace(" active-dot", "");
+        dots[i].classList.remove("active-dot");
     }
 
     //check for overflow of index
