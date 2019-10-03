@@ -75,6 +75,19 @@ function changeImage(selectedPosition) {
 
 
 /**
+ * reset the element 
+ * @params images:array, dots:array
+ *
+ * @return none
+ */
+function resetElements(images, dots) {
+    for (let i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+        dots[i].classList.remove("active-dot");
+    }
+}
+
+/**
  * Main methods to handle all the logics of carasoul
  * @param none
  *
@@ -85,12 +98,7 @@ function showActiveImage(currentIndex) {
     let images = document.getElementsByClassName("slider-image");
     let dots = document.getElementsByClassName("dot");
 
-
-    //reset all the element i.e images and dots
-    for (let i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-        dots[i].classList.remove("active-dot");
-    }
+    resetElements(images, dots);
 
     //check for overflow of index
     (currentIndex >= images.length) ? IMAGE_INDEX = 0 : '';
