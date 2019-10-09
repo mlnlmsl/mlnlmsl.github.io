@@ -113,7 +113,7 @@ main {
   margin-top: 20px;
   text-align: center;
   width: 100%;
-  padding-right: 10px;
+  padding-right: 0px;
   float: left;
   overflow: hidden;
 }
@@ -324,6 +324,7 @@ li.footer-menu-items a {
   .image-wrapper {
     padding-bottom: 90px;
   }
+
   .img-container-main {
     height: 400px;
     overflow: hidden;
@@ -350,9 +351,14 @@ li.footer-menu-items a {
     margin-top: 10px;
   }
 
+  .extra-container {
+    padding-right: 0px;
+  }
+
   .download-wrapper {
     width: 80.1562%;
   }
+
   .store-btn {
     display: inline-block;
   }
@@ -361,15 +367,18 @@ li.footer-menu-items a {
     width: 80.1562%;
     margin: 0px auto;
   }
+
   .footer-left {
     width: 60%;
     float: left;
   }
+
   li.footer-menu-items {
     display: inline-block;
     border-right: 2px solid #1abc9c;
     margin-right: 10px;
   }
+
   .footer-logo {
     width: 30%;
     float: right;
