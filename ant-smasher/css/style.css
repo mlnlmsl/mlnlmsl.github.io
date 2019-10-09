@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border: 1px solid green;
+}
+
+
+.ball {
+    position: absolute;
+    background-image: url("../images/ant.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
