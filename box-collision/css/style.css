@@ -1,13 +1,12 @@
 .container {
-    position: relative;
-    height: 500px;
-    width: 500px;
-    border: 1px solid green;
+  position: relative;
+  height: 500px;
+  width: 500px;
+  border: 1px solid green;
 }
 
-
 .ball {
-    position: absolute;
-    background: red;
-    border-radius: 50%;
+  position: absolute;
+  background: #55da6b;
+  border-radius: 50%;
 }
