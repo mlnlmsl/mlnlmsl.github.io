@@ -21,5 +21,6 @@ function showSlides() {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+    slideIndex++;
     setTimeout(showSlides, 2000);
 }
