@@ -173,6 +173,10 @@ p.get-started-btn {
         width: 20px;
     }
 
+    .slider {
+        display: none;
+    }
+
     .design-header {
         font-size: 19px;
         letter-spacing: 4px;
@@ -197,6 +201,10 @@ p.get-started-btn {
         margin: 50px 0px;
         border-radius: 4px;
         text-align: center;
+    }
+
+    .arrow img {
+        cursor: pointer;
     }
 
 }

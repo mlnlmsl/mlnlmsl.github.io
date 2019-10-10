@@ -1,28 +1,25 @@
-var person = {
-    name: 'Milan Lamsal',
-    contact: '9863699749',
-    address: 'Kathmandu',
-    email: 'melamsal555@gmail.com',
-    skills: ['python', 'php', 'js'],
-    education: [
-        {
-            level: '+2',
-            College: 'St. Lawrence',
-            Board: 'HSEB'
-        },
-        {
-            level: 'BE',
-            College: 'HCOE',
-            Board: 'TU'
-        }
-    ]
-};
+var slideIndex = 1;
+showSlides();
 
 
-for (var i = 5; i > 0; i--) {
-    var strArr = [];
-    for (var j = 0; j < i; j++) {
-        strArr.push("*")
+function plusSlides(n) {
+    slideIndex += n;
+    showSlides();
+}
+
+function currentSlide(n) {
+    slideIndex = n
+    showSlides();
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slider");
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    if (slideIndex < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    console.log(...strArr);
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
 }
