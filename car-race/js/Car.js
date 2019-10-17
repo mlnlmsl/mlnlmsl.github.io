@@ -26,6 +26,7 @@ function Car(parentElem) {
         switch (this.currentLane) {
             case 2:
                 this.currentLane = 1;
+
                 this.carDiv.style.left = `${LANES[this.currentLane]}px`;
                 break;
             case 1:
@@ -43,7 +44,10 @@ function Car(parentElem) {
                 break;
             case 1:
                 this.currentLane = 2;
-                this.carDiv.style.left = `${LANES[this.currentLane]}px`;
+                for (let lane = LANES[1]; lane <= LANES[2]; lane += 0.02) {
+                    this.carDiv.style.left = `${lane}px`;
+                }
+                // this.carDiv.style.left = `${LANES[this.currentLane]}px`;
                 break;
         }
     }
