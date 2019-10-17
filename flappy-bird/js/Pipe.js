@@ -61,19 +61,6 @@ function Pipes(bird) {
             p = this.pipesPosition[i];
             console.log([this.bird.x, this.bird.y, p.x, p.y + this.height * 0.5 + this.pipeGap]);
         }
-        // if (this.bird.x > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > p.y && bird.y - bird.radius < p.y + this.h) {
 
-        //     this.HITAUDIO.play();
-        //     stateObj.changeState(2);
-
-        // }
-
-        // //Bottom Pipe
-        // if (bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > bottomPipeYPos && bird.y - bird.radius < bottomPipeYPos + this.h) {
-
-        //     this.HITAUDIO.play();
-        //     stateObj.changeState(2);
-
-        // }
     }
 }
