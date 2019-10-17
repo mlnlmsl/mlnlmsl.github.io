@@ -41,13 +41,13 @@ function Bird() {
         if (this.y >= 370) {
             gameState = 'end';
         }
-        // if (this.y <= 0) {
-        //     for (let i = 0; i >= 370; i += 2) {
-        //         this.y = i;
-        //         this.draw();
-        //     }
-        //     gameState = 'end';
-        // }
+        if (this.y <= 0) {
+            for (let i = 0; i >= 370; i += 2) {
+                this.y = i;
+                this.draw();
+            }
+            gameState = 'end';
+        }
         this.y += this.speed;
         this.speed += this.gravity;
     }
