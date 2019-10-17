@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            background: #000000;
+        }
+
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 50px auto;
+
+        }
+
+        #score {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="canvas">
+        <span id="score"></span>
+        <canvas id="canvas1" height="500px" width="350px">
+        </canvas>
+    </div>
+    <!-- <canvas class="canvas" id="canvas2" height="400px" width="300px"></canvas> -->
+    <script src="./js/constants.js"></script>
+    <script src="./js/Ground.js"></script>
+    <script src="./js/Background.js"></script>
+    <script src="./js/Bird.js"></script>
+    <script src="./js/Pipe.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
