@@ -15,18 +15,14 @@ function Ground() {
         this.draw();
     }.bind(this);
 
-    this.draw = function () {
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x, this.y, this.w, this.h);
+    this.setImage = function (n) {
+        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + n * this.w, this.y, this.w, this.h);
+    }
 
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 2 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 3 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 4 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 5 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 6 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 7 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 8 * this.w, this.y, this.w, this.h);
-        ctx.drawImage(this.ground, this.sX, this.sY, this.w, this.h, this.x + 9 * this.w, this.y, this.w, this.h);
+    this.draw = function () {
+        for (let i = 0; i < 10; ++i) {
+            this.setImage(i);
+        }
     },
 
         this.update = function () {

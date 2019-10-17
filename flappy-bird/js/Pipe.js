@@ -33,7 +33,7 @@ function Pipes(bird) {
 
     this.update = function () {
         // this.pipeX -= 2;
-        console.log(this.pipesPosition.length);
+        // console.log(this.pipesPosition.length);
         for (let i = 0; i < this.pipesPosition.length; i++) {
             if (this.pipesPosition[i].x + this.width * 0.5 < 0) {
                 this.pipesPosition.shift();
@@ -41,6 +41,7 @@ function Pipes(bird) {
             }
             this.pipesPosition[i].x += -2;
         }
+        this.checkCollision();
         this.generatePipe();
     }
 
@@ -56,5 +57,23 @@ function Pipes(bird) {
 
     this.checkCollision = function () {
 
+        for (let i = 0; i < this.pipesPosition.length; i++) {
+            p = this.pipesPosition[i];
+            console.log([this.bird.x, this.bird.y, p.x, p.y + this.height * 0.5 + this.pipeGap]);
+        }
+        // if (this.bird.x > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > p.y && bird.y - bird.radius < p.y + this.h) {
+
+        //     this.HITAUDIO.play();
+        //     stateObj.changeState(2);
+
+        // }
+
+        // //Bottom Pipe
+        // if (bird.x + bird.radius > p.x && bird.x - bird.radius < p.x + this.w && bird.y + bird.radius > bottomPipeYPos && bird.y - bird.radius < bottomPipeYPos + this.h) {
+
+        //     this.HITAUDIO.play();
+        //     stateObj.changeState(2);
+
+        // }
     }
 }

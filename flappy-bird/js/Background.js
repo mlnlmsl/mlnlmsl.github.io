@@ -16,8 +16,6 @@ function Background() {
 
     this.draw = function () {
         ctx.drawImage(this.image, this.sX, this.sY, this.w, this.h, this.x, this.y, 360, 500 - 112);
-
-        // ctx1.drawImage(this.image, this.sX, this.sY, this.w, this.h, this.x + this.w, this.y, this.w, this.h);
     }
 }
 

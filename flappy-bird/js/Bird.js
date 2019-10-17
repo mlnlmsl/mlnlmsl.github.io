@@ -31,9 +31,11 @@ function Bird() {
     }
 
     this.update = function () {
+        if (frame % 20 == 0) {
         this.frame += 1;
-        if (this.frame > 2) {
-            this.frame = 0;
+            if (this.frame > 2) {
+                this.frame = 0;
+            }
         }
         this.down();
     }
