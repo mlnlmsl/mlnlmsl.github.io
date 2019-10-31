@@ -22,7 +22,7 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
     slideIndex++;
-    setTimeout(showSlides, 2000);
+    // setTimeout(showSlides, 7000);
 }
 
 function openNav() {
