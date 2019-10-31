@@ -152,12 +152,12 @@ main {
 }
 
 .input-group {
-  margin-top: 20px;
+  margin-top: 30px;
   padding-left: 30px;
 }
 
 .feedback-input {
-  height: 52px;
+  height: 60px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 4px 0px 0px 4px;
   outline: none;
@@ -166,12 +166,14 @@ main {
   font-size: 16px;
   font-weight: bold;
   font-family: inherit;
+  padding-right: 20px;
+  letter-spacing: 2px;
 }
 
 span.check-sign {
   background-color: #16a085;
   float: left;
-  line-height: 54px;
+  line-height: 62px;
   width: 50px;
   text-align: center;
   cursor: pointer;
@@ -211,6 +213,8 @@ span.check-sign {
   background-color: #1abc9c;
   margin-right: 20px;
   border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   /* width: 300px; */
 }
 

@@ -21,9 +21,15 @@ function showSlides() {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
-    slideIndex++;
-    // setTimeout(showSlides, 7000);
+    // slideIndex++;
+    // setTimeout(nextSlide, 4000);
 }
+
+function nextSlide() {
+    slideIndex++;
+    showSlides();
+}
+setInterval(nextSlide, 4000);
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
