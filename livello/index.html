@@ -124,17 +124,18 @@
                 </div>
             </div>
         </div>
+
         <div class="community">
             <div class="community-wrapper ">
                 <div class="scroll-icon clearfix">
                     <div class="slider-arrow">
-                        <img src="./images/fa-angle-left@1X.png" alt="">
-                        <img src="./images/fa-angle-right@1X.png" alt="">
+                        <img src="./images/fa-angle-left@1X.png" onclick="change(-1)" alt="">
+                        <img src="./images/fa-angle-right@1X.png" onclick="change(+1)" alt="">
                     </div>
                 </div>
                 <div class="image-wrapper clearfix">
-                    <div class="img-container-main">
-                        <div class="slider-wrapper">
+                    <div class="img-container-main" id="slider1">
+                        <div class="slider-wrapper" id="slider-wrapper">
                             <div class="extra-container slide">
                                 <img src="./images/camera.png" alt="">
                                 <h3>OUR COMMUNITY</h3>
@@ -155,6 +156,7 @@
                 </div>
             </div>
         </div>
+
         <div class="feedback">
             <div class="feedback-wrapper">
                 <div class="form-group">
@@ -216,6 +218,7 @@
         </div>
     </footer>
 
+    <script src="./js/slider.js"></script>
     <script src="./js/script.js"></script>
 </body>
 

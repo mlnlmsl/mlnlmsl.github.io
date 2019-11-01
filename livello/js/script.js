@@ -38,3 +38,5 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+
+var aSlider = new Slider("#slider1", 2000).init();
