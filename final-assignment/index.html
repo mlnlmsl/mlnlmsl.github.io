@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h3>This is static configuration.</h3>
+        <h5>You can clone and change the configuration to view the changes accordingly.</h5>
+        <h6>Work in Progress</h6>
+    </div>
+    <div class="visual" id="bar-graph"></div>
+    <div class="visual" id="pie-chart"></div>
+    <div class="visual" id="stack-chart"></div>
+    <div class="visual" id="line-chart"></div>
+
+
+    <!-- all the scripts as required -->
+    <script src="./js/constants.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/Line.js"></script>
+    <script src="./js/Bar.js"></script>
+    <script src="./js/Pie.js"></script>
+    <script src="./js/StackBar.js"></script>
+    <script src="./js/Graph.js"></script>
+
+    <script src="./js/index.js"></script>
+
+    <script>
+
+        var graph = new Graph(document.getElementById('bar-graph'));
+        var graph2 = new Graph(document.getElementById('pie-chart'));
+        var lineChart = new Graph(document.getElementById('line-chart'));
+        var stackChart = new Graph(document.getElementById('stack-chart'));
+
+        const pieConfig = {
+            title: 'Pie visual',
+            type: 'pie',
+            data: [
+                { label: 'Label 1', data: 12 },
+                { label: 'Label 2', data: 1 },
+                { label: 'Label 3', data: 14 },
+                { label: 'Label 4', data: 20 },
+                { label: 'Label 5', data: 50 },
+                { label: 'Label 5', data: 20 }
+            ]
+        };
+
+        const barConfig = {
+            title: 'Bar Visual',
+            type: 'bar',
+            xAxis: {
+                type: 'indicator',
+                label: ['jan', 'feb', 'mar', 'apr', 'may', 'jul']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: {
+                data: [1000, 300, 1500, 1000, 200, 200],
+                xLabel: 'Frequency',
+                yLabel: 'Year'
+            }
+        }
+
+        const lineConfig = {
+            title: 'Line Chart',
+            type: 'line',
+            xAxis: {
+                type: 'indicator',
+                label: ['a', 'b', 'c', 'd']
+            },
+            yAxis: {
+                type: 'value'
+            },
+
+            series: {
+                data: [10, 20, 15, 100],
+                xLabel: 'xLabel',
+                yLabel: 'yLabel'
+            }
+        }
+
+        const stackConfig = {
+            title: 'Stack Chart Demo',
+            type: 'stack',
+
+            xAxis: {
+                type: 'value'
+            },
+
+            yAxis: {
+                type: 'indicator',
+                label: ['a', 'b', 'c', 'd', 'e']
+            },
+
+            series: [
+                {
+                    name: 'name1',
+                    data: [10, 20, 30, 40, 30]
+                },
+                {
+                    name: 'name2',
+                    data: [10, 30, 10, 15, 20]
+                },
+                {
+                    name: 'name2',
+                    data: [15, 22, 23, 14, 10]
+                }
+            ]
+        };
+
+
+        graph2.createChart(pieConfig);
+        graph.createChart(barConfig);
+        lineChart.createChart(lineConfig);
+        stackChart.createChart(stackConfig);
+        // !function (t, e) {
+        //     console.log(t.echarts = {});
+        // }(this, function () {
+        //     console.log(this);
+        // });
+    </script>
+</body>
+
+</html>

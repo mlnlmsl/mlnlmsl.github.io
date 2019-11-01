@@ -1,0 +1,20 @@
+canvas {
+    background: #ffffff;
+    box-shadow: 0px 0px 4px #000000;
+}
+
+.header {
+    text-align: center;
+}
+
+.visual {
+    width: 50%;
+    float: left;
+}
+
+@media only screen and (max-width:1020px) {
+    .visual {
+        width: 100%;
+        align-content: center;
+    }
+}
