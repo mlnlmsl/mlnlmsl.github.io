@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-info .name {
+    font-size: 50px;
+    margin: 4px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa {
+    width: 30px;
+    height: 30px;
+}
+
